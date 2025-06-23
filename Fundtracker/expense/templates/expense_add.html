@@ -1,0 +1,34 @@
+{%extends 'base.html'%}
+
+{%load static%}
+
+
+
+
+{%block main_block%}
+
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img src="{%static 'images/abhi.jpg'%}" alt="" class="w-100 ">
+        </div>
+        <div class="col-6 p-4 border rounded border-2 border-success shadow">
+
+            <h4 class="text-center fw-bold">Add New Transaction</h4>
+            <form action="" method="post">
+
+        {%csrf_token%}
+
+        {{form}}
+
+       <div class="text-center">
+         <button class="btn btn-primary rounded-pill px-4 py-2 shadow " type="submit">
+            <i class="bi bi-check-circle "></i>
+            add </button>
+       </div>
+
+    </form></div>
+        <div class="col-3"></div>
+    </div>
+</div>
+{%endblock%}
