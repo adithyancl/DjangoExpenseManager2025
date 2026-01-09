@@ -17,4 +17,6 @@ This project focuses on:
 
 The project is under development and may be extended with additional features in the future.
 
+## License
 
+This project is licensed under the MIT License.
